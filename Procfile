@@ -1,1 +1,1 @@
-web: gunicorn app:server
+web:gunicorn 521_ia1:server
