@@ -2,3 +2,4 @@ altair
 gunicorn
 dash
 vega_datasets
+dash_bootstrap_components
