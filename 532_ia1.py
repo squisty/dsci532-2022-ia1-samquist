@@ -3,6 +3,7 @@ from dash import Dash, dcc, html, Input, Output
 from vega_datasets import data
 
 app = Dash(__name__)
+server = app.server
 
 bar = data.barley()
 
