@@ -19,9 +19,6 @@ app.layout = html.Div([
 @app.callback(
     Output('scatter', 'srcDoc'),
     Input('variety', 'value'))
-def update_output(xmax):
-    return plot_altair(xmax)
-
 
 def plot_altair(variety):
     chart = alt.Chart(bar[bar['variety'] < variety]).mark_point().encode(
