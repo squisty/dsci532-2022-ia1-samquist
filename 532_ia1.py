@@ -13,8 +13,7 @@ app.layout = html.Div([
             options=[{'label': i, 'value': i} for i in bar['variety'].unique()]),
         html.Iframe(
             id='scatter',
-            style={'border-width': '0', 'width': '100%', 'height': '400px'},
-            srcDoc=plot_altair(variety='Manchuria'))])
+            style={'border-width': '0', 'width': '100%', 'height': '400px'})])
 
 @app.callback(
     Output('scatter', 'srcDoc'),
